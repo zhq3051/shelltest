@@ -1,8 +1,10 @@
 #! /bin/bash
-a=1;
-if [ "$a == 1" ]
-then
+a="test";
+echo $a;
+if [ $a = "1" ]; then
 	echo "true"
-else
-	echo "false"
+elif [ $a = "2" ]; then
+	echo "false result"
+elif [ $a = "test" ]; then
+	echo "word result"
 fi
