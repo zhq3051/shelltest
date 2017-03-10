@@ -1,10 +1,12 @@
 #! /bin/bash
-a="test";
+a='test1 a';
 echo $a;
-if [ $a = "1" ]; then
+if [ "$a"x = "1"x ]; then
 	echo "true"
-elif [ $a = "2" ]; then
+elif [ "$a"x = "2"x ]; then
 	echo "false result"
-elif [ $a = "test" ]; then
+elif [ "$a"x = "test1 a"x ]; then
 	echo "word result"
+else
+	echo "else result"
 fi
